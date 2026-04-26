@@ -1,0 +1,207 @@
+/* Сброс и базовые настройки */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #ffefbc, #ffd86f);
+    color: #1b2e35;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Контейнер (чтобы всё не прилипало к краям) */
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ececec;
+    padding: 20px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: #1b2e35;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #f5b400;
+}
+
+/* HERO */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #2a454e;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero-text{
+    max-width: 500px;
+}
+
+.hero-text button{
+    background-color: #f5b400;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover{
+    background-color: #d99c00;
+}
+
+.hero-img img{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Заголовки */
+h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 20px;
+}
+
+h3{
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* ABOUT */
+.about{
+    padding: 20px;
+}
+
+/* SKILLS */
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills p{
+    background-color: #ffc801;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.skills p:hover{
+    transform: scale(1.05);
+}
+
+/* PROJECTS */
+.projects-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project{
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover{
+    transform: translateY(-5px);
+}
+
+.project img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project button{
+    background-color: #f5b400;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+/* АДАПТИВ */
+@media(max-width:768px){
+
+header{
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav{
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-text{
+    max-width: 100%;
+}
+
+.hero-img img{
+    width: 100%;
+}
+.project{
+    width: 350px;
+
+}
+
+}
